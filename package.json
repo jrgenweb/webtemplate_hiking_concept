@@ -1,0 +1,14 @@
+{
+  "name": "webtemplate_hiking_concept",
+  "version": "1.0.0",
+  "description": "website from psd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nemeth Laszlo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
