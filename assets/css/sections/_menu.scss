@@ -1,11 +1,11 @@
 @use "../custom" as *;
 
 .menu-footer {
-    background:
-        linear-gradient(rgba($primary, 0.5), rgba($primary, 0.5)),
-        url("../img/Shadow_.png") no-repeat;
-    background-position: auto, left;
-    background-repeat: auto, no-repeat;
+    background: linear-gradient(rgba($primary, 0.6), rgba($primary, 0.6)), url("../img/Shadow_.png");
+    background-position:
+        right,
+        bottom left;
+    background-repeat: repeat, no-repeat;
 
     position: relative;
     padding: calc($mask-image-height + 8rem) 10rem calc($mask-image-height + 8rem) 10rem;
@@ -44,6 +44,17 @@
 }
 .promo {
     background-color: lighten($secondary, 10%);
+}
+
+.features .sections .row {
+    .col-sm-12,
+    .col-md-4 {
+        padding: 0 !important;
+        margin: 0;
+        .card {
+            margin: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {

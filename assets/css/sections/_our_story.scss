@@ -29,9 +29,9 @@
     }
     .testimontials {
         position: relative;
-        background-image: url("../img/Shadow_.png");
+        background-image: url("../img/Shadow_2.png");
         background-repeat: no-repeat;
-        background-position: bottom left;
+        background-position: bottom right;
         padding: calc($mask-image-height + 2rem) 2rem calc($mask-image-height + 2rem) 2rem;
 
         &::before {
@@ -50,6 +50,14 @@
         }
         p:last-child {
             padding-top: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ourstory {
+        .testimontials p {
+            padding: 0;
         }
     }
 }

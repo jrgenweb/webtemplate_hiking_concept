@@ -11443,6 +11443,11 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 
+.btn-lg {
+  padding: 1rem 5rem 1rem 5rem;
+  letter-spacing: 0.1rem;
+}
+
 .decoration::after,
 .decoration::before,
 .footer::before {
@@ -11534,12 +11539,10 @@ h2 {
 .footer h3 {
   color: #fff;
   font-weight: 400;
+  padding-left: 16px;
 }
 .footer a:hover {
   color: #f7a54e;
-}
-.footer .social {
-  justify-content: space-between;
 }
 .footer .social .nav-link {
   font-size: 2rem;
@@ -11587,9 +11590,9 @@ h2 {
   }
 }
 .menu-footer {
-  background: linear-gradient(rgba(132, 119, 112, 0.5), rgba(132, 119, 112, 0.5)), url("../img/Shadow_.png") no-repeat;
-  background-position: auto, left;
-  background-repeat: auto, no-repeat;
+  background: linear-gradient(rgba(132, 119, 112, 0.6), rgba(132, 119, 112, 0.6)), url("../img/Shadow_.png");
+  background-position: right, bottom left;
+  background-repeat: repeat, no-repeat;
   position: relative;
   padding: calc(80px + 8rem) 10rem calc(80px + 8rem) 10rem;
   text-align: center;
@@ -11626,6 +11629,16 @@ h2 {
 
 .promo {
   background-color: #f9be7f;
+}
+
+.features .sections .row .col-sm-12,
+.features .sections .row .col-md-4 {
+  padding: 0 !important;
+  margin: 0;
+}
+.features .sections .row .col-sm-12 .card,
+.features .sections .row .col-md-4 .card {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -11717,9 +11730,9 @@ h2 {
 }
 .ourstory .testimontials {
   position: relative;
-  background-image: url("../img/Shadow_.png");
+  background-image: url("../img/Shadow_2.png");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom right;
   padding: calc(80px + 2rem) 2rem calc(80px + 2rem) 2rem;
 }
 .ourstory .testimontials::before {
@@ -11737,4 +11750,10 @@ h2 {
 }
 .ourstory .testimontials p:last-child {
   padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ourstory .testimontials p {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

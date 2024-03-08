@@ -17,3 +17,9 @@
 .btn {
     text-transform: uppercase;
 }
+
+.btn-lg {
+    @extend .btn-lg;
+    padding: 1rem 5rem 1rem 5rem;
+    letter-spacing: 0.1rem;
+}

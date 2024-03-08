@@ -9,13 +9,13 @@
     h3 {
         color: #fff;
         font-weight: 400;
+        padding-left: 16px;
     }
     a:hover {
         color: $secondary;
     }
 
     .social {
-        justify-content: space-between;
         .nav-link {
             font-size: 2rem;
         }
