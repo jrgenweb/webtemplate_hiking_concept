@@ -1,0 +1,47 @@
+@use "../custom" as *;
+
+.header {
+    background: url("../img/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+    padding: calc($mask-image-height + 2rem) 2rem calc($mask-image-height + 2rem) 2rem;
+    h1 {
+        /*margin: 5rem 0 0 0;
+        text-transform: uppercase;*/
+        color: lighten($secondary, 10%);
+        font-weight: bold;
+        text-shadow: 5px -2px 5px lighten($primary, 30%);
+    }
+    h3 {
+        font-weight: bold;
+        color: $primary;
+        font-style: italic;
+    }
+    .btn {
+        background-color: #fff;
+    }
+    p {
+        color: $primary;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        h1 {
+            font-size: 2.8rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .btn.btn-outline-primary {
+        }
+        p {
+        }
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,53 @@
+@use "../custom" as *;
+
+.menu-footer {
+    background:
+        linear-gradient(rgba($primary, 0.5), rgba($primary, 0.5)),
+        url("../img/Shadow_.png") no-repeat;
+    background-position: auto, left;
+    background-repeat: auto, no-repeat;
+
+    position: relative;
+    padding: calc($mask-image-height + 8rem) 10rem calc($mask-image-height + 8rem) 10rem;
+
+    text-align: center;
+    margin-top: 10rem;
+
+    h2 {
+        font-weight: bold;
+    }
+    p {
+    }
+}
+.menu {
+    margin-bottom: 10rem;
+}
+.discount .discount-text,
+.promo .promo-text {
+    padding: 5rem 2rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount .discount-image,
+.promo .promo-image {
+    padding: 0;
+}
+
+.discount .discount-image img,
+.promo .promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promo {
+    background-color: lighten($secondary, 10%);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-footer {
+        padding: calc($mask-image-height + 8rem) 2rem calc($mask-image-height + 8rem) 2rem;
+    }
+}

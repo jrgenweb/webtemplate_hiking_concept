@@ -1,0 +1,31 @@
+@use "../custom" as *;
+
+@mixin decoration-both {
+    content: "";
+    height: $mask-image-height;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+@mixin decoration-before {
+    top: 0;
+    -webkit-mask-position: bottom;
+    -webkit-mask-image: url("../img/file.svg");
+}
+@mixin decoration-after {
+    bottom: 0;
+    -webkit-mask-position: top;
+    -webkit-mask-image: url("../img/file2.svg");
+}
+
+.decoration::after,
+.decoration::before {
+    @include decoration-both;
+}
+.decoration::before {
+    @include decoration-before;
+}
+.decoration::after {
+    @include decoration-after;
+}

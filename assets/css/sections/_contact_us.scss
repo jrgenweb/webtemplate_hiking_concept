@@ -1,0 +1,50 @@
+@use "../custom" as *;
+
+.contactus {
+    background: $secondary;
+
+    position: relative;
+    padding: calc($mask-image-height + 2rem) 4rem calc($mask-image-height + 2rem) 4rem;
+
+    text-align: center;
+
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    justify-content: center;
+
+    align-items: center;
+
+    .form {
+        width: 80%;
+        input,
+        button {
+        }
+        input {
+            position: relative;
+            font-weight: bold;
+            color: $primary;
+        }
+        label {
+            font-weight: bold;
+            color: $primary;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.4rem;
+            padding: 0.8rem 1.22rem;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactus {
+        .form {
+            width: 100%;
+        }
+    }
+}

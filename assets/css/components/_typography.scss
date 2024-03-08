@@ -1,0 +1,20 @@
+@use "../custom" as *;
+p {
+    font-size: 1.4rem;
+    color: darken($primary, 10%);
+}
+.bg-primary,
+.bg-secondary {
+    p,
+    a {
+        color: #fff;
+    }
+}
+h3 {
+    color: $secondary;
+}
+h1,
+h2,
+h2 {
+    font-weight: bold;
+}

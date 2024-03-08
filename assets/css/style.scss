@@ -1,1 +1,15 @@
 @use "custom";
+
+/* COMPONENTES */
+@use "components/buttons";
+@use "components/design";
+@use "components/typography";
+
+/*SECTIONS*/
+@use "sections/contact_us";
+@use "sections/footer";
+@use "sections/header";
+@use "sections/menu";
+@use "sections/home";
+@use "sections/navbar";
+@use "sections/our_story";

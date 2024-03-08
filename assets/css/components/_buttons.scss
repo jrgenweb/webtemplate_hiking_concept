@@ -1,0 +1,19 @@
+@use "../custom" as *;
+
+.btn-custom {
+    @extend .btn; // extend the bootstrap .btn class
+    background-color: #ff08ef;
+    color: #fff;
+
+    &:hover {
+        background-color: darken(#007bff, 10%); // darken the color a bit on hover
+    }
+}
+
+.btn.btn-primary {
+    color: #fff;
+}
+
+.btn {
+    text-transform: uppercase;
+}

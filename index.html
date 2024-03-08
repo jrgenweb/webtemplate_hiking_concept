@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hiking</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,24 +15,23 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-white text-uppercase">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Brand logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
                 aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarID">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link active" aria-current="page" href="#">Menu</a>
-                    <a class="nav-link active" aria-current="page" href="#">Our Story</a>
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" aria-current="page" href="#menu">Menu</a>
+                    <a class="nav-link" aria-current="page" href="#ourstory">Our Story</a>
+                    <a class="nav-link" aria-current="page" href="#contactus">Contact Us</a>
                 </div>
                 <div class="form">
-                    <div class="input-group ">
+                    <div class="input-group">
                         <input type="text" class="form-control" placeholder="" aria-label="Search"
-                            aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            aria-describedby="btn-search">
+                        <button class="btn btn-outline-secondary" type="button" id="btn-search"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
@@ -42,135 +41,162 @@
     </nav>
 
 
-    <div class="header decoration">
+    <div class="home" id="home">
+
+        <div class="header decoration">
+            <div class="container">
+                <div class="w-50">
+                    <h1 class="display-1 text-uppercase">It's time for hiking</h1>
+                    <h3 class="text-uppercase">lorem ipsum dolor</h3>
+                    <a href="" class="btn btn-outline-primary mt-5 mb-3 rounded-pill btn-lg">Read more</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab odio, excepturi, cum nihil
+                        earum
+                        saepe
+                        modi deserunt optio neque nostrum aperiam! Consequuntur ab voluptatibus esse illum quasi aliquam
+                        nemo!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features container ">
+            <h2 class="text-secondary text-uppercase  text-center display-3 ">Let's Go</h2>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora consequatur optio
+                adipisci sed maxime
+                cumque rem explicabo nam! Veniam ipsum est reprehenderit illo facere suscipit, eum perspiciatis ipsam
+                nesciunt laborum.</p>
+
+            <div class="sections">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 ">
+                        <div class="bg-primary card" style="">
+                            <img src="assets/img/image1.png" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 ">
+                        <div class="bg-primary card" style="">
+                            <img src="assets/img/image2.png" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 ">
+                        <div class="bg-primary card" style="">
+                            <img src="assets/img/image3.png" alt="" class="card-img-top">
+                            <div class="card-body text-white">
+                                <h3 class="card-title">Lorem ipsum</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn btn-primary rounded-pill btn-lg">Show more</a>
+        </div>
+    </div>
+
+
+
+    <div class="menu" id="menu">
         <div class="container">
-            <div class="w-50">
-                <h1 class="display-1 text-uppercase">It's time for hiking</h1>
-                <h3 class="text-uppercase">lorem ipsum dolor</h3>
-                <a href="" class="btn btn-outline-primary mt-5 mb-3 rounded-pill btn-lg">Read more</a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab odio, excepturi, cum nihil earum
+            <div class="row discount">
+                <div class="col-md-6 col-sm-12 bg-danger discount-image">
+                    <img src="assets/img/discount_image1.png" alt="" class="">
+                </div>
+                <div class="col-md-6 col-sm-12 bg-primary text-white discount-text">
+                    <h2>Discount up to 50% All excursion</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptas laudantium
+                        obcaecati a,
+                        omnis voluptatem esse quas natus, enim praesentium sapiente ratione! Provident facilis possimus
+                        obcaecati laboriosam inventore earum culpa!</p>
+                    <a href="" class="btn btn-secondary rounded-pill">Show more</a>
+                </div>
+            </div>
+            <div class="row promo">
+
+                <div class="col-md-6 col-sm-12 text-white promo-text">
+                    <h2>january's Promo: Buy 1 Get 1 Free!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis adipisci dicta quas aspernatur
+                        itaque.
+                        Nesciunt, cum reprehenderit illo aut cumque pariatur delectus maxime veritatis eum hic. Sunt
+                        odio
+                        tempora quis?</p>
+                    <a href="" class="btn btn-secondary rounded-pill">Show more</a>
+                </div>
+                <div class="col-md-6 col-sm-12 promo-image">
+                    <img src="assets/img/discount_image2.png" alt="" class="">
+                </div>
+            </div>
+            <div class="row menu-footer decoration text-white">
+                <h2 class="display-3">Hiking in the mountains</h2>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam illum velit amet quis
+                    voluptates at
+                    voluptas! Facere, unde sunt et vitae eligendi corrupti fugit possimus, ipsam mollitia, similique
                     saepe
-                    modi deserunt optio neque nostrum aperiam! Consequuntur ab voluptatibus esse illum quasi aliquam
-                    nemo!
-                </p>
+                    ipsum.</p>
             </div>
         </div>
     </div>
 
-    <div class="container selections">
-        <h2 class="text-secondary text-uppercase  text-center display-3 ">Let's Go</h2>
-        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora consequatur optio
-            adipisci sed maxime
-            cumque rem explicabo nam! Veniam ipsum est reprehenderit illo facere suscipit, eum perspiciatis ipsam
-            nesciunt laborum.</p>
 
-        <div class="sections">
+
+
+    <div class="ourstory" id="ourstory">
+        <div class=" container ">
+
+
+            <div class=" header-image  decoration">
+                <h2 class="display-2">Explore <span>The World</span></h2>
+            </div>
             <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div class="bg-primary card" style="width: 18rem;">
-                        <img src="assets/img/image1.png" alt="" class="card-img-top">
-                        <div class="card-body text-white">
-                            <h3 class="card-title">Lorem ipsum</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate
+                        molestiae
+                        autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
+                        veritatis amet!</p>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="bg-primary card" style="width: 18rem;">
-                        <img src="assets/img/image2.png" alt="" class="card-img-top">
-                        <div class="card-body text-white">
-                            <h3 class="card-title">Lorem ipsum</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate
+                        molestiae
+                        autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
+                        veritatis amet!</p>
                 </div>
-                <div class="col d-flex justify-content-center">
-                    <div class="bg-primary card" style="width: 18rem;">
-                        <img src="assets/img/image3.png" alt="" class="card-img-top">
-                        <div class="card-body text-white">
-                            <h3 class="card-title">Lorem ipsum</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet cons...</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-sm-12">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate
+                        molestiae
+                        autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
+                        veritatis amet!</p>
                 </div>
             </div>
 
-        </div>
-        <a href="#" class="btn btn-primary rounded-pill btn-lg">Show more</a>
-    </div>
-
-    <div class="container bg-primary valami">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 bg-danger">
-                <img src="assets/img/discount_image1.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6 col-sm-12 bg-primary text-white">
-                <h2>Discount up to 50% All excursion</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptas laudantium obcaecati a,
-                    omnis voluptatem esse quas natus, enim praesentium sapiente ratione! Provident facilis possimus
-                    obcaecati laboriosam inventore earum culpa!</p>
-                <a href="" class="btn btn-secondary rounded-pill">Show more</a>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-md-6 col-sm-12 bg-secondary text-white">
-                <h2>january's Promo: Buy 1 Get 1 Free!</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis adipisci dicta quas aspernatur itaque.
-                    Nesciunt, cum reprehenderit illo aut cumque pariatur delectus maxime veritatis eum hic. Sunt odio
-                    tempora quis?</p>
-                <a href="" class="btn btn-secondary">Show more</a>
-            </div>
-            <div class="col-md-6 col-sm-12"><img src="assets/img/discount_image2.png" alt="" class="img-fluid"></div>
-        </div>
-    </div>
-    <div class="container hiking decoration text-white">
-        <h2 class="display-3">Hiking in the mountains</h2>
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam illum velit amet quis
-            voluptates at
-            voluptas! Facere, unde sunt et vitae eligendi corrupti fugit possimus, ipsam mollitia, similique saepe
-            ipsum.</p>
-    </div>
-
-    <div class="container explore decoration">
-        <h2 class="display-2">Explore <span>The World</span></h2>
-    </div>
-    <div class="container quote  mb-5 mt-5">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <h3>lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate molestiae
-                    autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
-                    veritatis amet!</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h3>lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate molestiae
-                    autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
-                    veritatis amet!</p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h3>lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam saepe voluptate molestiae
-                    autem ab in modi, eos quasi officiis reiciendis omnis cumque ut nobis animi officia perferendis
-                    veritatis amet!</p>
+            <div class="row text-center mt-5  mb-5 testimontials quote">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum aperiam, excepturi facere
+                    inventore
+                    quas. Eligendi doloribus harum fugiat odit repellendus, voluptate placeat ratione, similique vero
+                    natus
+                    eius, libero totam.
+                </p>
+                <p>lorem ipsum</p>
             </div>
         </div>
 
-        <div class="row text-center mt-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum aperiam, excepturi facere
-                inventore
-                quas. Eligendi doloribus harum fugiat odit repellendus, voluptate placeat ratione, similique vero natus
-                eius, libero totam.</p>
-            <p>lorem ipsum</p>
-        </div>
     </div>
 
-    <div class="container quote">
 
-    </div>
-    <div class="container subscribe decoration">
+
+    <div class="contactus container decoration" id="contactus">
         <h2 class="text-white display-2">Title Here</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente atque incidunt delectus quam, enim magni
             ab odit molestias reiciendis totam ipsum ipsa facilis, quidem, libero sint minima obcaecati quod eum.</p>
@@ -186,7 +212,7 @@
         </div>
     </div>
 
-    <div class="container footer  bg-primary">
+    <div class="footer container  bg-primary">
         <div class="row">
             <div class="col-sm-12 col-md-6 p-4">
                 <h3>Title Here</h3>
@@ -251,7 +277,10 @@
     </div>
 
 
-    <script src="node_modules/bootstrap/js/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

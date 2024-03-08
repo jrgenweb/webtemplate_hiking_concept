@@ -1,0 +1,31 @@
+@use "../custom" as *;
+.navbar-nav {
+    text-transform: uppercase;
+}
+
+.navbar .form {
+    .form-control[type="text"],
+    .btn {
+        border-radius: 20px;
+        background-color: lighten($primary, 40%);
+        color: darken($primary, 30%);
+        font-weight: bold;
+    }
+    .form-control[type="text"] {
+        width: 6rem;
+        transition: width 0.3s;
+    }
+    .btn {
+        border: none;
+        color: darken($primary, 30%);
+        left: -1px;
+    }
+    .btn:hover {
+        background-color: lighten($primary, 20%);
+    }
+    .form-control[type="text"]:hover,
+    .form-control[type="text"]:active,
+    .form-control[type="text"]:focus {
+        width: 10rem;
+    }
+}

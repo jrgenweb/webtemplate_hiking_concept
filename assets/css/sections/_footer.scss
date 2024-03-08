@@ -1,0 +1,26 @@
+@use "../custom" as *;
+@use "../components/design" as *;
+
+.footer {
+    position: relative;
+    margin-top: 8rem;
+    padding: calc($mask-image-height + 4rem) 2rem 2rem 2rem;
+
+    h3 {
+        color: #fff;
+        font-weight: 400;
+    }
+    a:hover {
+        color: $secondary;
+    }
+
+    .social {
+        justify-content: space-between;
+        .nav-link {
+            font-size: 2rem;
+        }
+    }
+}
+.footer::before {
+    @extend .decoration;
+}
